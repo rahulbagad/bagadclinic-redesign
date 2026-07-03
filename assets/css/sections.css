@@ -47,7 +47,7 @@
 .chip svg{width:22px;height:22px}
 
 /* ---- Marquee ---- */
-.marquee{background:var(--pine);color:#fff;overflow:hidden;padding:20px 0;position:relative;transform:rotate(-1.2deg) scale(1.03);margin:20px 0}
+.marquee{background:var(--pine);color:#fff;overflow:hidden;padding:20px 0;position:relative;transform:scale(1);margin:20px 0}
 .marquee-track{display:flex;gap:56px;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content}
 .marquee-track span{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:500;display:flex;align-items:center;gap:56px}
 .marquee-track span::after{content:"✦";color:var(--gold);font-size:1rem}
