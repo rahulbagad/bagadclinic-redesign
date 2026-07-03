@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Bagad Clinic · Mother &amp; Child Care</title>
+<meta name="description" content="Dr. Bagad Clinic — compassionate paediatric and gynaecology care for mothers and children in Talegaon Dabhade. Led by Dr. Santosh Bagad & Dr. Varsha Shewale." />
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Styles (order matters: base → layout → components → sections → responsive) -->
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/sections.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<!-- Anti-flash: apply saved theme before first paint -->
+<script>
+  (function(){
+    try{
+      var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', t);
+    }catch(e){}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header id="header">
+  <nav class="wrap">
+    <div class="brand" onclick="scrollTo({top:0,behavior:'smooth'})">
+      <img src="images/logo.jpeg" alt="Dr. Bagad Clinic Logo" />
+      <div><b>Dr. Bagad Clinic</b><span>Mother &amp; Child Care</span></div>
+    </div>
+    <div class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#specialists">Specialists</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode"></button>
+      <a class="btn btn-primary nav-cta" href="https://book.healthplix.com/dr-santosh-bagad-pune" target="_blank" rel="noopener">Book Now</a>
+      <button class="icon-btn hamburger" id="menuBtn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#specialists">Specialists</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#contact">Contact</a>
+  <a class="btn btn-primary" href="https://book.healthplix.com/dr-santosh-bagad-pune" target="_blank" rel="noopener">Book Appointment</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow reveal">✦ Welcome to our Clinic</span>
+      <h1 class="reveal d1">Compassionate Care for <em>Mothers</em> &amp; <em>Children</em></h1>
+      <p class="lead reveal d2">Dedicated to providing comprehensive, expert healthcare for women and children — in a warm, welcoming, and family-first environment.</p>
+      <div class="hero-cta reveal d3">
+        <a class="btn btn-primary" href="https://book.healthplix.com/dr-santosh-bagad-pune" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Book Appointment
+        </a>
+        <a class="btn btn-ghost" href="#specialists">Meet Our Doctors</a>
+      </div>
+      <div class="trust reveal d3">
+        <div class="avatars">
+          <img src="images/drsantosh.jpeg" alt="Dr. Santosh Bagad" />
+          <img src="images/drvarsha.jpeg" alt="Dr. Varsha Shewale" />
+        </div>
+        <div>
+          <div class="stars">★★★★★</div>
+          <small>Trusted by families across Talegaon Dabhade</small>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal d2">
+      <div class="hero-photo"><img src="images/motherchild.jpg" alt="Mother and child care" /></div>
+      <div class="chip c1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7c-2.5 4.5-9.5 9-9.5 9z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><b>Expert Care</b><small>Gentle &amp; personal</small></div>
+      </div>
+      <div class="chip c2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div><b>7+ Years</b><small>Of experience</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Paediatrics</span><span>Vaccination</span><span>Maternity Care</span><span>Gynaecology</span><span>Newborn Care</span><span>Women's Health</span>
+    <span>Paediatrics</span><span>Vaccination</span><span>Maternity Care</span><span>Gynaecology</span><span>Newborn Care</span><span>Women's Health</span>
+  </div>
+</div>
+
+<!-- ================= FEATURES ================= -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow coral">Why families choose us</span>
+      <h2>Healthcare that feels like family</h2>
+      <p>Everything a growing family needs — under one warm, welcoming roof.</p>
+    </div>
+    <div class="features">
+      <div class="fcard reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Flexible Timings</h3>
+        <p>Open morning and evening to easily fit into your busy family schedule.</p>
+      </div>
+      <div class="fcard reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 14a4 4 0 100-8 4 4 0 000 8zM4 21a8 8 0 0116 0" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Expert Specialists</h3>
+        <p>Highly qualified, caring doctors with decades of combined experience.</p>
+      </div>
+      <div class="fcard reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3>Prime Location</h3>
+        <p>Centrally located and easily accessible in Talegaon Dabhade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section style="padding:0 0 clamp(70px,10vw,120px)">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><b data-count="7" data-suffix="+">0</b><span>Years of Experience</span></div>
+      <div class="stat"><b data-count="2" data-suffix="">0</b><span>Expert Specialists</span></div>
+      <div class="stat"><b data-count="23" data-suffix="+">0</b><span>Services Offered</span></div>
+      <div class="stat"><b data-count="1000" data-suffix="+">0</b><span>Happy Families</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Complete care, two dedicated departments</h2>
+      <p>From your child's first breath to every stage of a woman's life.</p>
+    </div>
+    <div class="toggle-wrap reveal">
+      <div class="toggle">
+        <button class="tbtn active" data-panel="ped">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a3 3 0 106 0M12 3a4 4 0 014 4c0 2-2 3-2 5h-4c0-2-2-3-2-5a4 4 0 014-4zM10 21h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Paediatric Department
+        </button>
+        <button class="tbtn" data-panel="gyn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a5 5 0 015 5c0 2.5-2 4.5-4 4.9V16h2v2h-2v3h-2v-3H9v-2h2v-3.1C9 12.5 7 10.5 7 8a5 5 0 015-5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Gynaecology &amp; Obstetrics
+        </button>
+      </div>
+    </div>
+
+    <!-- Service pills are rendered by assets/js/main.js from assets/js/data.js -->
+    <div class="svc-panel ped active" id="panel-ped">
+      <div class="svc-grid" id="grid-ped"></div>
+    </div>
+    <div class="svc-panel gyn" id="panel-gyn">
+      <div class="svc-grid" id="grid-gyn"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOCTORS ================= -->
+<section class="section" id="specialists">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow coral">Our Medical Specialists</span>
+      <h2>Meet the doctors behind the care</h2>
+      <p>A husband-and-wife team devoted to the health of mothers and children.</p>
+    </div>
+    <div class="docs">
+      <div class="doc reveal">
+        <div class="doc-photo"><img src="images/drsantosh.jpeg" alt="Dr. Santosh Bagad" /></div>
+        <div>
+          <h3>Dr. Santosh Bagad</h3>
+          <div class="cred">MD Paediatrics (ISM)</div>
+          <p>Consultant Paediatrician and Neonatologist providing expert care for newborns, infants, and children.</p>
+          <span class="tag">Paediatrics &amp; Neonatology</span>
+        </div>
+      </div>
+      <div class="doc reveal d1">
+        <div class="doc-photo"><img src="images/drvarsha.jpeg" alt="Dr. Varsha Shewale (Bagad)" /></div>
+        <div>
+          <h3>Dr. Varsha Shewale <span style="color:var(--muted);font-size:1rem;font-weight:400">(Bagad)</span></h3>
+          <div class="cred">MS Obstetrics and Gynaecology</div>
+          <p>Consultant Gynecologist and Obstetrician dedicated to women's health, maternity care, and wellness.</p>
+          <span class="tag">Obstetrics &amp; Gynaecology</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" id="testimonials">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Patient Testimonials</span>
+      <h2>Loved by the families we care for</h2>
+      <p>Real words from mothers who trusted us with their journey.</p>
+    </div>
+    <div class="tgrid">
+      <div class="tcard reveal">
+        <div class="quote">&#8220;</div>
+        <p>Dr. Bagad listens to your problems with patience and gives proper solutions. He is friendly towards children and can calm fussy infants wonderfully. He has thorough knowledge in his field and provides the best treatment. </p>
+        <div class="tperson">
+          <div class="tavatar">SM</div>
+          <div>
+            <b>Sagarika Mahalanobis</b>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard reveal d1">
+        <div class="quote">&#8220;</div>
+        <p>Dr. Bagad mam is very kind. She guided us from the first visit to delivery with exceptional care, clear explanations, and constant support.</p> 
+        <div class="tperson">
+          <div class="tavatar">VG</div>
+          <div>
+            <b>Varsha Gore</b>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow coral">Visit Our Clinic</span>
+      <h2>We're here when you need us</h2>
+      <p>Book an appointment or drop by — we'd love to care for your family.</p>
+    </div>
+    <div class="contact-card reveal">
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+        <p>Reach out for appointments, questions, or directions to the clinic.</p>
+
+        <div class="cline">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005 5L17 12l5 2v3a2 2 0 01-2 2A16 16 0 013 5z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div>
+            <small>Call for Appointment</small>
+            <a href="tel:7020219523">70202 19523</a>
+            <a href="tel:7666117231">76661 17231</a>
+          </div>
+        </div>
+
+        <div class="cline">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div>
+            <small>Clinic Address</small>
+            <p>Ganpati Chowk, Shaniwar Peth,<br>Talegaon Dabhade 06</p>
+          </div>
+        </div>
+
+        <div class="cline">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div style="flex:1">
+            <small>Opening Hours</small>
+            <div class="hours">
+              <div class="h"><small>Morning</small><b>10 AM – 2 PM</b></div>
+              <div class="h"><small>Evening</small><b>5 PM – 9 PM</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-book">
+          <a class="btn btn-primary" href="https://book.healthplix.com/dr-santosh-bagad-pune" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Book Online Now
+          </a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe title="Google Maps Location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=18.7209043,73.6887977&z=17&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fcol">
+        <div class="fbrand">
+          <img src="images/logo.jpeg" alt="Dr. Bagad Clinic" />
+          <div><b>Dr. Bagad Clinic</b><span>Mother &amp; Child Care</span></div>
+        </div>
+        <p>Compassionate paediatric and gynaecology care for the families of Talegaon Dabhade and beyond.</p>
+      </div>
+      <div class="fcol">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#specialists">Our Specialists</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <a href="tel:7020219523">70202 19523</a>
+        <a href="tel:7666117231">76661 17231</a>
+        <a href="https://www.google.com/maps/place/Dr.+BAGAD+Children's+Clinic+%26+Vaccination+Center/@18.7209094,73.6862228,17z" target="_blank" rel="noopener">Ganpati Chowk, Talegaon Dabhade</a>
+        <a href="https://book.healthplix.com/dr-santosh-bagad-pune" target="_blank" rel="noopener">Book Appointment</a>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© <span id="year"></span> Dr. Bagad Clinic. All rights reserved.</span>
+      <div class="fl">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Scripts (data first, then behaviour) -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

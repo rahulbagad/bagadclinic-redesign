@@ -1,0 +1,78 @@
+/* ==========================================================================
+   base.css — Design tokens, reset, typography, buttons & shared utilities
+   ========================================================================== */
+
+/* ---- Design tokens (light theme) ---- */
+:root{
+  --ivory:#FBF6EE; --cream:#F3EADB; --card:#ffffff;
+  --ink:#22201C; --muted:#6b655c;
+  --pine:#0E5C55; --pine-2:#137a6f; --pine-soft:#e3f0ed;
+  --coral:#E8664E; --coral-soft:#fbe4dd; --peach:#F4A98F;
+  --gold:#C9A24B;
+  --line:#e9ded0;
+  --shadow:0 18px 50px -20px rgba(20,50,45,.28);
+  --shadow-sm:0 8px 26px -14px rgba(20,50,45,.3);
+  --r:22px;
+  --maxw:1200px;
+  --nav-bg:rgba(251,246,238,.72);
+}
+
+/* ---- Design tokens (dark theme) ---- */
+html[data-theme="dark"]{
+  --ivory:#141311; --cream:#1c1a17; --card:#201d19;
+  --ink:#f3ede3; --muted:#a89f92;
+  --pine:#3fb9aa; --pine-2:#57cfbf; --pine-soft:#16302c;
+  --coral:#f27a63; --coral-soft:#3a231d; --peach:#e79a80;
+  --gold:#dcb75f;
+  --line:#2e2a25;
+  --shadow:0 20px 60px -22px rgba(0,0,0,.7);
+  --shadow-sm:0 10px 30px -16px rgba(0,0,0,.6);
+  --nav-bg:rgba(20,19,17,.72);
+}
+
+/* ---- Reset & base elements ---- */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{
+  font-family:'Plus Jakarta Sans',system-ui,sans-serif;
+  background:var(--ivory);color:var(--ink);
+  line-height:1.65;overflow-x:hidden;
+  transition:background .4s ease,color .4s ease;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+/* ---- Utilities ---- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+.serif{font-family:'Fraunces',serif}
+.accent{color:var(--coral)}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--pine);background:var(--pine-soft);
+  padding:7px 16px;border-radius:999px;
+}
+.eyebrow.coral{color:var(--coral);background:var(--coral-soft)}
+
+/* ---- Buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;cursor:pointer;border:none;
+  font-family:inherit;font-weight:700;font-size:.98rem;
+  padding:15px 28px;border-radius:999px;transition:transform .25s cubic-bezier(.2,.9,.3,1.3),box-shadow .25s,background .25s;
+}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 14px 30px -10px rgba(232,102,78,.6)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px -12px rgba(232,102,78,.7)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--pine);color:var(--pine);transform:translateY(-3px)}
+.btn-pine{background:var(--pine);color:#fff}
+.btn-pine:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
+
+/* ---- Section scaffolding ---- */
+.section{padding:clamp(70px,10vw,120px) 0;position:relative}
+.head{max-width:640px;margin:0 auto clamp(40px,6vw,64px);text-align:center}
+.head h2{font-size:clamp(2.1rem,5vw,3.5rem);margin:18px 0 14px}
+.head p{color:var(--muted);font-size:1.08rem}
